@@ -178,7 +178,7 @@ button:hover{
     display: flex;
     align-items: center; 
     background-color:#e6ce1b;
-
+    
  }
  
  input{
@@ -229,21 +229,7 @@ button:hover{
     font-weight: 600;
     
 }
-output{
-    justify-content: center;
-    text-align: center;
-    color:#3F3D56;
-    background-color:#fff;
-    padding: 5rem 11rem;
-    border-style:outset;
-    border-color: var(--blue);
-    border-radius: 100px;
-    transition: var(--smooth);
-    font-weight: 300;
-    font-size: large;
-    overflow:scroll;
-    
-}
+
 output:hover{
     border-color: var(--pink);
 }
@@ -327,7 +313,7 @@ output:hover{
 .output .synonym .detail p{  
     padding-bottom:7px;
 }
-.output .synonym .detail span{   
+.output .synonym .detail p{   
     font-size:18px;
 }
 
