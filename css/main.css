@@ -61,6 +61,7 @@ img{
     transform: translateX(0);
     opacity: 1;
     transition: var(--smooth);
+    
 }
 .navbar-link {
     list-style: none;

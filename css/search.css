@@ -16,12 +16,13 @@ img{
     width: 100%;
 }
 
-.container{
-    max-width: 1200px;
+.container .navbar .header-title{
+    margin-left:23%;
+}
+
+.container{   
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
-
 }
 :root{
     --green:#54B192;
@@ -36,6 +37,7 @@ img{
     justify-content: space-between;
     align-items: center;
     padding: 20px  0px;
+    background-color:#cab516;
 }
 /* logo  */
 .navbar-logo img{
@@ -55,7 +57,7 @@ img{
     transition:var(--smooth) ;
     transform: translateX(-100%);
     opacity: 0;  
-
+    justify-content:left;
 }
 .navbar-links.navbar-open{
     transform: translateX(0);
@@ -121,9 +123,9 @@ img{
     transform: rotate(45deg) translate(35px,-35px);
 }
 .open .navbar-icon:after{
-    transform: rotate(-45deg) translate(35px,35px);;
+    transform: rotate(-45deg) translate(35px,35px);
 }
-@media (min-width:62em) {
+@media  (min-width:62em) {
     .navbar-links{
         position: initial;
         transform: translateX(0);
@@ -132,6 +134,7 @@ img{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        
 
     }   
     .navbar-link a{
@@ -147,6 +150,8 @@ img{
     .navbar-icons{
         display: none;
     }
+    
+    
 }
 button {
     text-align: center;
@@ -158,6 +163,7 @@ button {
     border-radius: 100px;
     transition: var(--smooth);
     font-weight: 700;
+    
 }
 button:hover{
     background-color: var(--blue);
@@ -168,8 +174,11 @@ button:hover{
 #body{
     /* position: relative; */
     /* height: 100vh; */
+    height:200px;
     display: flex;
     align-items: center; 
+    background-color:#e6ce1b;
+
  }
  
  input{
@@ -190,17 +199,38 @@ button:hover{
     max-width: 1000px;  
     margin-left: auto;
     margin-right: auto;
-    margin-top:100px ;
+    margin-top:50px ;
     text-align: center;
     
  }
 /* output  */
+
+.container-output{
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px 10px;
+
+}
+
+
 #out-put{
+    
     /* height: 1vh; */
-    display: flex;
+
+    background-image:url("https://i.redd.it/3qduhxm9hf161.jpg");
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top:-50px;
     align-items: center;
+    justify-content: center;
+    font-family:"Inter", sans-serif ;
+    font-weight: 600;
+    
 }
 output{
+    justify-content: center;
     text-align: center;
     color:#3F3D56;
     background-color:#fff;
@@ -211,31 +241,109 @@ output{
     transition: var(--smooth);
     font-weight: 300;
     font-size: large;
+    overflow:scroll;
+    
 }
 output:hover{
     border-color: var(--pink);
 }
 .output{
-    max-width: 10000px;  
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:100px ;
-    object-fit: cover;;
-    text-align: center;
+    
+    max-width: 10000px;
+    
+    margin:100px 200px 100px 200px;
+    object-fit: cover;
+    text-align: left;
+    background-color: #fff;
+    border-style:none;
+    
+    border-radius:5%;
+    list-style-type: none;
+    padding :60px 30px;
+
 }
+
+.output .word{
+    
+    padding-bottom:3px;
+}
+
+.output .word .detail{
+    
+    padding-left:10px;
+    font-size:40px;
+   font-family: "Inter", sans-serif ;
+   
+}
+.output .element{
+    padding-left:10px;
+}
+
+.output .element .detail{
+    
+    font-size: 20px;
+    
+    font-family: "Inter", sans-serif ;
+    display:flex;
+    border-bottom:1.5px solid #ccc;
+    padding-bottom:5px;
+    font-weight: 100;
+}
+.output .element .detail span{
+    font-size:15px;
+    
+}
+
+
+.output .meaning .detail{
+    font-size:20px;
+    padding:20px 10px;
+    border-left:1.5px solid purple;
+}
+
+.output .meaning{
+    padding:20px 0px;
+    
+    border-bottom: 1.5px solid #ccc;
+}
+.output .meaning .detail p{  
+    padding-bottom:7px;
+}
+.output .meaning .detail span{   
+    font-size:18px;
+}
+
+.output .synonym .detail{
+    font-size:20px;
+    padding:20px 10px;
+    border-left:1.5px solid purple;
+
+}
+.output .synonym{
+    padding:20px 0px;
+    
+    border-bottom: 1.5px solid #ccc;
+}
+.output .synonym .detail p{  
+    padding-bottom:7px;
+}
+.output .synonym .detail span{   
+    font-size:18px;
+}
+
 @media(min-width:62rem){
     output{
         padding: 5rem 18rem; 
     }
     .body-inputs{
         
-        margin-top:100px;
+        margin-top:50px;
         text-align: center;
-     }
+     }  
      .output{
     
         margin-top:100px;
-        text-align: center;
+        text-align: left;
     }
-
+   
 }

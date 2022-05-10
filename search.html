@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,51 +13,99 @@
     <link rel="stylesheet" href="./css/search.css">
     <title>Search</title>
 </head>
+
 <body>
     <header>
         <div class="container">
-        <nav class="navbar">
-            <!-- logo  -->
-            <div class="navbar-logo">
-              <a href="http://127.0.0.1:5500/"><img src="./image/logodesign.png" alt="logo web"></a>
-            </div>
-            <!-- navbar-linls  -->
-            <ul class="navbar-links">
-                <li class="navbar-link"><a href="http://127.0.0.1:5500/Add.html">Add</a></li>
-                <li class="navbar-link"><a href="http://localhost:5500/Delete.html">Delete</a></li>
-                <li class="navbar-link"><a href="http://localhost:5500/Edit.html">Edit</a></li>
+            <nav class="navbar">
+                <!-- logo  -->
+                <div class="navbar-logo">
+                    <a href="http://127.0.0.1:5500/"><img src="./image/logodesign.png" alt="logo web"></a>
+                </div>
 
-            </ul>
-            <!-- menu buttons  -->
-            <div class="navbar-icons">
-                <div class="navbar-icon"></div>
-            </div>
-        </nav>
+                <h1 class="header-title">English Dictionary</h1>
+                <!-- navbar-linls  -->
+                <ul class="navbar-links">
+                    <li class="navbar-link"><a href="http://127.0.0.1:5500/Add.html">Add</a></li>
+                    <li class="navbar-link"><a href="http://localhost:5500/Delete.html">Delete</a></li>
+                    <li class="navbar-link"><a href="http://localhost:5500/Edit.html">Edit</a></li>
+
+                </ul>
+                <!-- menu buttons  -->
+                <div class="navbar-icons">
+                    <div class="navbar-icon"></div>
+                </div>
+            </nav>
         </div>
     </header>
     <section id="body">
         <div class="container">
             <!-- input text  -->
             <div class="body-inputs">
-                <input type="text"class="body-input" placeholder="Searching Your Word"><br><br>
-            <!-- button search  -->    
+                <input type="text" class="body-input" placeholder="Searching Your Word"><br><br>
+                <!-- button search  -->
                 <button class="search-button">Search</button>
             </div>
         </div>
     </section>
     <section id="out-put">
-        <div class="container">
+        <div class="container-output">
             <!-- output text  -->
-            <div class="output">
-                <output type="text"class="output-text"></output>
-            </div>
+            <ul class="output">
+                <!---- <output type="text" class="output-text"></output> -->
+                <li class="word">
+                    <div class="detail">
+                        <p>word</p>
+                        
+                    </div>
+                </li>
+                <li class="element">
+                    <div class="detail">
+                        <p>Noun <span id="pronunciation">/wɜːd/</span></p>
+
+                    </div>
+                </li>
+                <li class="meaning" id="VN-meaning">
+                    <div class="detail">
+                        <p>Vietnamese meaning:</p>
+                        <span>từ , cuộc nói chuyện ,tin tức </span>
+                    </div>
+                </li>
+                <li class="meaning" id="EN-meaning">
+                    <div class="detail">
+                        <p>English-meaning:</p>
+                        <span> a single unit of language that means something and can be spoken or written</span>
+                    </div>
+                </li>
+                <li class="meaning" id="example">
+                    <div class="detail">
+                        <p>Example:</p>
+                        <span> Do you know the words to this song?</span>
+                    </div>
+                </li>
+                <li class="synonym">
+                    <div class="detail">
+                        <p>Synonym</p>
+                        <div class="synonym-list">
+                            <span>syn1,</span>
+                            <span>syn2,</span>
+                            <span>syn3,</span>
+                            
+                        </div>
+
+                    </div>
+                </li>
+
+
+            </ul>
 
         </div>
-        
+
     </section>
-     <!-- icon  -->
-     <script src="https://kit.fontawesome.com/650d0c074b.js" crossorigin="anonymous"></script>
-     <!-- main.js  -->
-     <script src="./js/search.js"></script>
+    <!-- icon  -->
+    <script src="https://kit.fontawesome.com/650d0c074b.js" crossorigin="anonymous"></script>
+    <!-- main.js  -->
+    <script src="./js/search.js"></script>
 </body>
+
 </html>
