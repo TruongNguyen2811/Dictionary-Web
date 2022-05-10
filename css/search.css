@@ -16,13 +16,22 @@ img{
     width: 100%;
 }
 
-.container .navbar .header-title{
-    margin-left:23%;
-}
-
 .container{   
     width: 100%;
-    margin: 0 auto;
+    /* background-color: #3F3D56; */
+    /* margin: 0 auto; */
+    /* background-color:#D9B959; */
+}
+.container .navbar .header-title{
+    /* margin-top: 100px; */
+    /* position: relative; */
+    /* left:1000px;  */
+     /* margin-right: auto; */
+    /* background-color: #3F3D56; */
+    /* margin-left: 10000vw; */
+    /* justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
 }
 :root{
     --green:#54B192;
@@ -34,13 +43,14 @@ img{
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    padding: 20px  0px;
-    background-color:#cab516;
+    padding: 20px  10px;
+    background-color:#D9B959;
 }
 /* logo  */
 .navbar-logo img{
+    margin-right: auto;
    width: 100px ;
    height: 100px;
    object-fit: cover;
@@ -49,7 +59,7 @@ img{
 .navbar-links{
     position: fixed;
     top:0;
-    left:0;
+    left:0px;
     width: 30%;
     height: 100%;
     background-color: var(--blue);
@@ -57,6 +67,7 @@ img{
     transition:var(--smooth) ;
     transform: translateX(-100%);
     opacity: 0;  
+    /* margin-right: left; */
     justify-content:left;
 }
 .navbar-links.navbar-open{
@@ -66,7 +77,7 @@ img{
 }
 .navbar-link {
     list-style: none;
-    margin: 40px;
+    margin: 30px 40px;
 
 }
 .navbar-link a{
@@ -84,7 +95,7 @@ img{
     display: flex;
     justify-content: center;
     align-items:center;
-    width: 100px;
+    width: 0wh;
     height: 100px;
     cursor: pointer;
     transition: var(--smooth);
@@ -128,13 +139,14 @@ img{
 @media  (min-width:62em) {
     .navbar-links{
         position: initial;
-        transform: translateX(0);
+        transform: translateX(-150px);
         opacity: 1;
         background-color: transparent;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
-        
+        width: 5%;
+        /* background-color: #54B192; */
 
     }   
     .navbar-link a{
