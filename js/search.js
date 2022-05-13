@@ -39,5 +39,7 @@ searchButton.addEventListener("click", ()=>{
         enMean.textContent = "act stupid";
         example.textContent= "they play so bad";
         synonym.textContent = "recreate , chill with da flow";
+    } else{
+        retWord.textContent = "occko";
     }
 });
