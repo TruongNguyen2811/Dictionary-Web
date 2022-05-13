@@ -43,28 +43,44 @@
                 <form>
                     <span class="text-center">Add New Word</span>
                     <div class="input-container">
-                        <input type="text" required="" />
+                        <input id="newWordInput" type="text" required="" />
                         <label>New word</label>
                     </div>
                     <div class="input-container">
-                        <input type="text" required="" />
+                        <input id="pronunInput" type="text" required="" />
                         <label>pronunciation</label>
                     </div>
+                    <div class ="word-type">
+                        <label>word type</label><br>
+                        <select id="wordTypeInput" class="wordTypeDetail">
+                            <option>noun</option>
+                            <option>adjective</option>
+                            <option>adverb</option>
+                            <option>verb</option>
+                            <option>conjunction</option>
+                            <option>pronoun</option>
+                            <option>preposition</option>
+                            <option>determiner</option>
+                            <option>modal verb</option>
+                        </select>
+                            
+                        
+                    </div>
                     <div class="input-container">
-                        <textarea name="VN-meaning" required=""></textarea>
+                        <textarea id="vnMeanInput" name="VN-meaning" required=""></textarea>
                         <label>Vietnamese meaning</label>
                     </div>
                     <div class="input-container">
-                        <textarea name="EN-meaning" required=""></textarea>
+                        <textarea id="enMeanInput" name="EN-meaning" required=""></textarea>
                         <label>English meaning</label>
                     </div>
 
                     <div class="input-container">
-                        <textarea name="Example" required=""></textarea>
+                        <textarea id="exampleInput" name="Example" required=""></textarea>
                         <label>Example</label>
                     </div>
                     <div class="input-container">
-                        <input type="text" required="" />
+                        <input id="synonymInput" type="text" required="" />
                         <label>Synonym</label>
                     </div>
 
