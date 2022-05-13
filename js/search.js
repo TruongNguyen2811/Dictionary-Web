@@ -41,5 +41,8 @@ searchButton.addEventListener("click", ()=>{
         synonym.textContent = "recreate , chill with da flow";
     } else{
         retWord.textContent = "occko";
+        wordType.textContent="lmao";
+        vnMean.textContent = "bủh";
+        enMean.textContent = "bruhhh";
     }
 });
