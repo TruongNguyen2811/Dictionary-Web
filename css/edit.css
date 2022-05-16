@@ -37,7 +37,7 @@ img{
     justify-content: space-between;
     align-items: center;
     padding: 20px  0px;
-    background-color: red;
+    background-image: linear-gradient(-200deg, #cf2ec4 0%, #33417d 100%);
 }
 /* logo  */
 .navbar-logo img{
@@ -183,11 +183,18 @@ input{
 }
 /* input  */
 #body{
-    display: flex;
-    align-items: center; 
-    margin-left: auto;
-    margin-right: auto;
-    background-color: cyan;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height:75vh;
+    background-image: url("https://cutewallpaper.org/21/nice-background-hd/Nice-Background-Images-wallpaper-collections-at-graciaviva.cat.png");
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: cover;
+    /* background-color: aqua; */
+
 }
 .input{
     max-width: 1000px;  
@@ -208,36 +215,12 @@ input{
     max-width: 1000px;  
     margin-left: auto;
     margin-right: auto;
-    margin-top:50px ;
+    margin-top:0px ;
     text-align: center;
     
  }
 
- 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
- 
  #cover{
     justify-content: center;
     align-items: center;
@@ -258,7 +241,7 @@ input{
     width:35%;
 	position:absolute;
 	left:50%;
-	top:70%;
+	top:83%;
 	transform: translate(-50%,-50%);
     background-color: #734ae8;
     background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);

@@ -47,6 +47,7 @@ img{
     align-items: center;
     padding: 20px  10px;
     background-color:#D9B959;
+    /* background-color: #3F3D56; */
 }
 /* logo  */
 .navbar-logo img{
@@ -190,7 +191,7 @@ button:hover{
     display: flex;
     align-items: center; 
     background-color:#e6ce1b;
-    
+
  }
  
  input{
@@ -208,12 +209,66 @@ button:hover{
     border-color: var(--pink);
  }
  .body-inputs{
-    max-width: 1000px;  
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:50px ;
+    position: relative;
+    top: 50px;
+    max-width:auto;  
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-
+    top:50px ; */
     text-align: center;
     
+ }
+ .body-input{
+    margin-left: auto;
+    margin-right: auto;
+    /* left: 50px; */
+     
+    /* top: 15px; */
+    /* margin-top: 125px ; */
+    /* top: 125px; */
+ }
+
+ /* drop box */
+ .dropbox{
+     /* position: relative; */
+     /* top: 50px; */
+     background-color: #FFF;
+     max-width: 20rem;
+     margin-left: auto;
+     margin-right: auto;
+     /* padding: 10px 8px; */
+     border-radius: 10px ;
+     opacity: 0;
+     pointer-events: none;
+     max-height: 250px;
+     /* overflow-y: auto; */
+
+
+ }
+ .dropbox li{
+     position: relative;
+     list-style: none;
+      /* padding: ; */
+     width: 100%;
+     cursor:default;
+     border-radius: 10px;
+     display:none;
+ }
+  .active .dropbox{
+     /* padding: 10px 8px; */
+    opacity: 1;
+    pointer-events: auto;
+
+}
+ .active .dropbox li{
+    display:block;
+    padding: 7px;
+} 
+ .dropbox li:hover{
+     background-color: #3F3D56;
+     color:#FFF;
+     transition: var(--smooth); 
  }
 /* output  */
 
@@ -241,13 +296,27 @@ button:hover{
     font-weight: 600;
     
 }
-
+output{
+    justify-content: center;
+    text-align: center;
+    color:#3F3D56;
+    background-color:#fff;
+    padding: 5rem 11rem;
+    border-style:outset;
+    border-color: var(--blue);
+    border-radius: 100px;
+    transition: var(--smooth);
+    font-weight: 300;
+    font-size: large;
+    overflow:scroll;
+    
+}
 output:hover{
     border-color: var(--pink);
 }
 .output{
     
-    max-width: 10000px;
+    /* max-width: 10000px; */
     
     margin:100px 200px 100px 200px;
     object-fit: cover;
@@ -325,7 +394,7 @@ output:hover{
 .output .synonym .detail p{  
     padding-bottom:7px;
 }
-.output .synonym .detail p{   
+.output .synonym .detail span{   
     font-size:18px;
 }
 
@@ -344,13 +413,4 @@ output:hover{
         text-align: left;
     }
    
-}
-
-
-.delete-btn-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:12px;
-    margin-bottom:-5px;
 }
