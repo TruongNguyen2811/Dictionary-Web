@@ -183,6 +183,7 @@ input{
 }
 /* input  */
 #body{
+    
     justify-content: center;
     align-items: center;
     margin-left: 0;
@@ -217,7 +218,7 @@ input{
     margin-right: auto;
     margin-top:0px ;
     text-align: center;
-    
+    padding-top:50px;
  }
 
 
@@ -247,7 +248,7 @@ input{
     background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
 	border-radius:5px;
 	padding:70px 100px;
-    margin:120px 0px;
+    margin:70px 0px;
     object-fit: cover; 
 }
 .input-container{
