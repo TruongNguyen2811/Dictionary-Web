@@ -54,7 +54,7 @@ function select(element){
     //     linkTag.setAttribute("href", webLink);
     //     linkTag.click();
     // }
-    // searchWrapper.classList.remove("active");
+     searchWrapper.classList.remove("active");
 }
 
 function showSuggestions(list){

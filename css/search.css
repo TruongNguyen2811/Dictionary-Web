@@ -21,6 +21,7 @@ img{
     /* background-color: #3F3D56; */
     /* margin: 0 auto; */
     /* background-color:#D9B959; */
+    
 }
 .container .navbar .header-title{
     /* margin-top: 100px; */
@@ -187,11 +188,11 @@ button:hover{
 #body{
     /* position: relative; */
     /* height: 100vh; */
-    height:200px;
+    height:300px;
     display: flex;
     align-items: center; 
     background-color:#e6ce1b;
-
+    padding-top: -100px;
  }
  
  input{
@@ -209,14 +210,18 @@ button:hover{
     border-color: var(--pink);
  }
  .body-inputs{
+     
     position: relative;
-    top: 50px;
+    
     max-width:auto;  
     /* margin-left: auto;
     margin-right: auto; */
     /* margin-
     top:50px ; */
     text-align: center;
+    justify-content: center;
+   
+
     
  }
  .body-input{
@@ -404,7 +409,7 @@ output:hover{
     }
     .body-inputs{
         
-        margin-top:50px;
+        
         text-align: center;
      }  
      .output{
