@@ -77,13 +77,13 @@ const example=document.getElementById("example-out") ;
 const synonym =document.getElementById("synonym-out") ;
 
 
-var tempWord;
-var tempPronunciation;
-var tempWordType;
-var tempVnMean;
-var tempEnMean;
-var tempExample;
-var tempSynonym;
+var tempWord = "lmao1";
+var tempPronunciation = "lmao2";
+var tempWordType = "lmao3";
+var tempVnMean = "lmao4";
+var tempEnMean = "lmao5";
+var tempExample = "lmao6";
+var tempSynonym = "lmao7";
 
 
 
@@ -92,12 +92,13 @@ const searchButton =document.querySelector(".search-button");
 searchButton.addEventListener("click", ()=>{
     tempWord = searchWord.value;
     if(tempWord == "play"){
-        retWord.textContent ="Play";
-        wordType.textContent="verbs";
-        vnMean.textContent = "choi";
-        enMean.textContent = "act stupid";
-        example.textContent= "they play so bad";
-        synonym.textContent = "recreate , chill with da flow";
+        retWord.textContent =tempWord;
+        pronunciation.textContent = tempPronunciation;
+        wordType.textContent=tempWordType;
+        vnMean.textContent = tempVnMean;
+        enMean.textContent = tempEnMean;
+        example.textContent= tempExample;
+        synonym.textContent = tempSynonym;
     } else{
         retWord.textContent = "occko";
         wordType.textContent="lmao";
